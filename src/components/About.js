@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const About = () => {
-    const [story, setStory] = useState(false)
+    const [story, setStory] = useState(true)
     const [team, setTeam] = useState(false)
     const [awards, setAwards] = useState(false)
 
@@ -21,9 +21,9 @@ const About = () => {
         document.querySelector('#story').classList.remove('hover')
         document.querySelector('#team').classList.remove('hover')
         document.querySelector('#awards').classList.remove('hover')
-        document.querySelector('#story .underline').style.opacity = null;
-        document.querySelector('#team .underline').style.opacity = null;
-        document.querySelector('#awards .underline').style.opacity = null;
+        document.querySelector('#story .underline').style.opacity = 0;
+        document.querySelector('#team .underline').style.opacity = 0;
+        document.querySelector('#awards .underline').style.opacity = 0;
     }
 
     const showStory = () => {
@@ -51,11 +51,10 @@ const About = () => {
         document.querySelector('#awards .underline').style.opacity = '1';
     }
 
-
     return (
         <section className="about-container">
             <ul className="about-tabs">
-                <li id="story" onClick={() => showStory()}>
+                <li className="hover" id="story" onClick={() => showStory()} >
                     <h3>The Story</h3>
                     <div className="underline"></div>
                 </li>
@@ -95,13 +94,13 @@ const About = () => {
                                         <div className="overlay"></div>
                                         <div className="social">
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faGooglePlusG} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faGooglePlusG} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faLinkedinIn} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faLinkedinIn} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faTwitter} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faTwitter} color="white"/>
                                             </div>
                                         </div>
                                     </div>
@@ -119,13 +118,13 @@ const About = () => {
                                         <div className="overlay"></div>
                                         <div className="social">
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faGooglePlusG} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faGooglePlusG} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faLinkedinIn} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faLinkedinIn} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faTwitter} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faTwitter} color="white"/>
                                             </div>
                                         </div>
                                     </div>
@@ -143,13 +142,13 @@ const About = () => {
                                         <div className="overlay"></div>
                                         <div className="social">
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faGooglePlusG} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faGooglePlusG} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faLinkedinIn} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faLinkedinIn} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faTwitter} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faTwitter} color="white"/>
                                             </div>
                                         </div>
                                     </div>
@@ -167,13 +166,13 @@ const About = () => {
                                         <div className="overlay"></div>
                                         <div className="social">
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faGooglePlusG} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faGooglePlusG} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faLinkedinIn} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faLinkedinIn} color="white"/>
                                             </div>
                                             <div className="social-item">
-                                                <FontAwesomeIcon icon={faTwitter} color="white" size="md"/>
+                                                <FontAwesomeIcon icon={faTwitter} color="white"/>
                                             </div>
                                         </div>
                                     </div>
