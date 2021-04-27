@@ -806,4 +806,155 @@ a:visited {
 .menu-container .menu .menu-items .zero-top {
   top: 0px;
 }
+
+.testimonials {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials h1 {
+  font-family: "Monsterrat", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.testimonials h2 {
+  position: relative;
+  font-family: "Monsterrat", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 38px;
+  font-size: 20px;
+}
+
+.testimonials h2::before {
+  height: 2px;
+  width: 15px;
+  background-color: #a60317;
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: -20px;
+}
+
+.testimonials h2::after {
+  height: 2px;
+  width: 15px;
+  background-color: #a60317;
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -20px;
+}
+
+.testimonials .carousel-root {
+  background-color: transparent;
+  width: 60%;
+  height: 190px;
+}
+
+.testimonials .carousel-root .carousel {
+  height: 100%;
+}
+
+.testimonials .carousel-root .carousel .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonials .carousel-root .carousel .control-dots .dot {
+  background-color: transparent;
+  border: 2px solid #a60317;
+  width: 10px;
+  height: 10px;
+}
+
+.testimonials .carousel-root .carousel .control-dots .selected {
+  background-color: #a60317;
+}
+
+.testimonials .carousel-root .carousel .control-arrow:hover {
+  background-color: transparent;
+}
+
+.testimonials .carousel-root .carousel .carousel-item {
+  padding-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials .carousel-root .carousel .carousel-item blockquote {
+  width: 80%;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  font-size: 16px;
+}
+
+.testimonials .carousel-root .carousel .carousel-item .review {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonials .carousel-root .carousel .carousel-item .review .line {
+  width: 10px;
+  height: 1px;
+  background-color: #a60317;
+  margin: 0 5px;
+}
+
+.testimonials .carousel-root .carousel .carousel-item .review h3 {
+  font-family: "Monsterrat", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: 700;
+}
 /*# sourceMappingURL=index.css.map */

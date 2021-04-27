@@ -2,7 +2,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
 import Menu from './components/Menu'
-
+import Testimonials from './components/Testimonials'
 function App() {
   return (
     <div className="App">
@@ -10,6 +10,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Menu></Menu>
+      <Testimonials></Testimonials>
     </div>
   );
 }
